@@ -115,7 +115,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #FFCD57 !important;
+			color: #FF7ABA !important;
 		}
 
 		a img {
@@ -176,7 +176,7 @@ input, select, textarea {
 	h2 {
 		font-size: 2em;
 		letter-spacing: -0.015em;
-		color: #FFCD57;
+		color: #FF7ABA;
 	}
 
 	h3 {
@@ -187,7 +187,7 @@ input, select, textarea {
 	h4 {
 		font-size: 2em;
 		letter-spacing: -0.015em;
-		color: #FFCD57;
+		color: #FF7ABA;
 	}
 
 	em, i {
@@ -1693,7 +1693,7 @@ input, select, textarea {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #FFCD57;
+		background-color: #FF7ABA;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
@@ -1704,8 +1704,8 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #ffd572;
-			color: #fff !important;
+    background-color: #FF7ABA;
+    color: #fff !important;
 		}
 
 		input[type="button"]:active,
@@ -1937,7 +1937,7 @@ input, select, textarea {
 		}
 
 		.icon.featured {
-			color: #FFCD57;
+			color: #FF7ABA;
 			display: block;
 			margin: 0 0 1.5em 0;
 			cursor: default;
