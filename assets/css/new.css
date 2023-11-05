@@ -121,3 +121,12 @@
     font-weight: 700;
     line-height: 150%;
 }
+
+.carlypic {
+    width: 16.15806rem;
+    height: 28.17781rem;
+    position: absolute;
+    right: -0.0165rem;
+    bottom: -0.27638rem;
+    background: lightgray 50% / cover no-repeat;
+}
