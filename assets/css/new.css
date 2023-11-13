@@ -159,7 +159,7 @@
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%;
+    line-height: 100%;
     /* 4.5rem */
 }
 
@@ -169,5 +169,18 @@
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
+    line-height: 100%;
+}
+
+.portfoliotitle {
+    color: #588157;
+    text-align: center;
+    align-self: stretch;
+    /* text-5xl/font-bold */
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
     line-height: 150%;
+    /* 72px */
 }
