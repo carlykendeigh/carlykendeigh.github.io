@@ -177,6 +177,17 @@
     line-height: 100%;
 }
 
+.portfolio {
+    display: flex;
+    width: 94.1875rem;
+    padding: 2rem 9.25rem 4.1875rem 6.5625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: #EBE8DD;
+}
+
 .portfoliotitle {
     color: #588157;
     text-align: center;
@@ -186,7 +197,7 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%;
+    line-height: 80%;
     /* 72px */
 }
 
