@@ -1,6 +1,6 @@
 .bodylayout {
     display: flex;
-    width: 100%;
+    width: 90%;
     /* Use 100% to make it scale with the page */
     height: auto;
     /* Auto height to accommodate content */
