@@ -254,6 +254,10 @@
     border-radius: 0.4rem;
 }
 
+.portfolioitem:hover{
+    background-color: #344E41;
+}
+
 .h3 {
     color: #FFF;
     text-align: center;
@@ -445,4 +449,21 @@ body.is-preload *:after {
     -webkit-transition: none !important;
     -ms-transition: none !important;
     transition: none !important;
+}
+
+
+.underconstruction:hover {
+    background-color: rgb(229, 69, 69)
+}
+
+.underconstructiontitle {
+    color: #f7fff7;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-wrap: pretty
+        /* 4.5rem */
 }
