@@ -314,6 +314,9 @@
     overflow-x: none;
 
 }
+.blogitem:hover{
+    background-color: #cffbcf;
+}
 
 .blogitem {
     width: 18.75rem;
