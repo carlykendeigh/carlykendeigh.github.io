@@ -249,7 +249,7 @@
     border: 0.5px solid #344e4151;
     width: 15rem;
 
-    background: #3b3b3b;
+    background: #222;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 0.4rem;
 }
@@ -456,14 +456,29 @@ body.is-preload *:after {
     background-color: rgb(229, 69, 69)
 }
 
-.underconstructiontitle {
+.underconstructiontext {
     color: #f7fff7;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    text-wrap: pretty
+    font-weight: 200;
+    line-height: 10%;
+    text-wrap: pretty;
+    margin: 0rem
         /* 4.5rem */
+}
+.underconstruction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.0625rem;
+    border: 0.5px solid #344e4151;
+    width: 15rem;
+
+    background: #222;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: inset;
+
+    border-radius: 0.4rem;
 }
