@@ -1,9 +1,62 @@
+/* from other css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+.a {
+    text-decoration-color: #222;
+    text-decoration-line: none;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    margin: 0rem;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: #3b3b3b;
+}
+
+.aboutmetext {
+    color: #FFF;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.aboutmetitle {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
 .bodylayout {
     display: flex;
     width: 100%;
-    /* Use 100% to make it scale with the page */
     height: auto;
-    /* Auto height to accommodate content */
     flex-direction: column;
     align-items: center;
     background: #f7fff7;
@@ -12,35 +65,152 @@
     scroll-behavior: smooth !important;
 }
 
-.nav {
+.blog {
     display: flex;
-    padding-bottom: 1rem;
-    /* Use percentages for padding */
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
+    gap: 2rem;
+    flex-shrink: 0;
     align-self: stretch;
+    justify-content: space-evenly;
+    border: 2px solid #344E41;
+    background: #222;
     overflow-x: none;
-    position: sticky;
-    top: 0rem;
-    background: #f7fff7;
-    border-bottom-color: #58815789;
-    border-bottom-width: 0.1rem;
-    border-bottom-style: solid;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    object-fit: contain;
+    border-radius: 0.25rem;
+}
 
+.blogbody {
+    overflow-x: none;
+    border-radius: 0.5rem;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f7fff7;
+}
 
+.bloggrid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-direction: row;
+    overflow-x: none;
+    object-fit: contain;
+}
+
+.blogheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50%;
+    justify-content: center;
+}
+
+.blogitem {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    border-radius: 0.25rem;
+    background-color: #f7fff7;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blogleft {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.blogpic {
+    width: 6rem;
+    padding: 1rem;
+    max-height: 6rem;
+    object-fit: fill;
+}
+
+.blogpicblog {
+    height: "auto";
+    width: 50rem;
+    object-fit: contain;
+}
+
+.blogtext {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    text-wrap: pretty;
+}
+
+.blogtitle {
+    color: #222;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-wrap: pretty;
+}
+
+.blogtype {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-wrap: nowrap;
+}
+
+.blogtypestrong {
+    color: #000;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    text-wrap: nowrap;
+}
+
+.blogwhole {
+    object-fit: contain;
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: #588157;
+    flex-shrink: 0;
+    align-self: stretch;
+    justify-content: space-evenly;
+}
+
+.breakline {
+    width: 100%;
+    height: 2rem;
+    fill: #EBE8DD;
 }
 
 .buymecoffee {
     display: flex;
     color: var(--White, #FFF);
-    /* text-base/font-bold */
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
-    /* 1.5rem */
     padding: 0.75rem 1.5rem;
     justify-content: center;
     align-items: center;
@@ -52,48 +222,14 @@
     text-decoration-line: none;
 }
 
-.navid {
-    color: #222;
-    /* text-3xl/font-semibold */
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.875rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    /* 2.8125rem */
-    color: #588157;
-    /* text-3xl/font-semibold */
-    text-decoration: none;
-}
-
-.navgroup {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 3.1875rem;
-
-}
-
-.navitem {
-    color: var(--Dark, #1F1F1F);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.125rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 130%;
-    /* 1.4625rem */
-}
-
 .button {
     display: flex;
     color: var(--White, #FFF);
-    /* text-base/font-bold */
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
-    /* 1.5rem */
     padding: 0.75rem 1.5rem;
     justify-content: center;
     align-items: center;
@@ -102,7 +238,50 @@
     border-radius: 0.5rem;
     color: var(--White, #FFF);
     box-shadow: #2222225b;
+}
 
+.carlypic {
+    width: 10rem;
+    height: auto;
+    position: absolute;
+    right: -0.0165rem;
+    bottom: -0.27638rem;
+}
+
+.h1 {
+    color: #588157;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.h1Accent {
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.h3 {
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-self: stretch;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 80%;
+}
+
+.initialframes {
+    width: 15rem;
+    height: auto;
 }
 
 .intro {
@@ -122,6 +301,48 @@
     gap: 3rem;
 }
 
+.navid {
+    color: #222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    padding-bottom: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: stretch;
+    overflow-x: none;
+    position: sticky;
+    top: 0rem;
+    background: #f7fff7;
+    border-bottom-color: #58815789;
+    border-bottom-width: 0.1rem;
+    border-bottom-style: solid;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.navgroup {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3.1875rem;
+}
+
+.navitem {
+    color: var(--Dark, #1F1F1F);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
 .p {
     color: var(--Dark, #1F1F1F);
     font-family: 'Open Sans', sans-serif;
@@ -130,82 +351,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-    /* 1.875rem */
     align-self: stretch;
-}
-
-.h1 {
-    color: #588157;
-    /* text-5xl/font-bold */
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3rem;
-
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    /* 4.5rem */
-}
-
-.h1Accent {
-    color: #222;
-    /* text-5xl/font-bold */
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-}
-
-.initialframes {
-    width: 15rem;
-    /* Use percentage for width */
-    height: auto;
-    /* Auto height to maintain aspect ratio */
-}
-
-.carlypic {
-    width: 10rem;
-    height: auto;
-    position: absolute;
-    right: -0.0165rem;
-    bottom: -0.27638rem;
-}
-
-.aboutme {
-    display: flex;
-    flex-direction: column;
-    height: 15rem;
-    padding: 3rem;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    align-self: stretch;
-    background: #3b3b3b;
-    margin: 0rem;
-}
-
-.aboutmetitle {
-    color: #FFF;
-    text-align: center;
-    /* text-5xl/font-bold */
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    /* 4.5rem */
-}
-
-.aboutmetext {
-    color: #FFF;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
 }
 
 .portfolio {
@@ -220,17 +366,26 @@
     height: fit-content;
 }
 
-.portfoliotitle {
-    color: #588157;
-    text-align: center;
-    align-self: stretch;
-    /* text-5xl/font-bold */
-    font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 80%;
-    /* 72px */
+.portfolioimage {
+    padding: 1rem;
+    padding-top: 0rem;
+    border-radius: .5rem;
+}
+
+.portfolioitem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.0625rem;
+    border: 0.5px solid #344e4151;
+    width: 15rem;
+    background: #3b3b3b;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 0.4rem;
+}
+
+.portfolioitem:hover {
+    background-color: #344E41;
 }
 
 .portfoliorow {
@@ -242,105 +397,44 @@
     flex-direction: row;
 }
 
-.portfolioitem {
+.portfoliotitle {
+    color: #588157;
+    text-align: center;
+    align-self: stretch;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80%;
+}
+
+.underconstruction {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.0625rem;
     border: 0.5px solid #344e4151;
     width: 15rem;
-
-    background: #3b3b3b;
+    background: #222;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: inset;
     border-radius: 0.4rem;
 }
 
-.h3 {
-    color: #FFF;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-self: stretch;
-    /* text-5xl/font-bold */
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 80%;
-    /* 4.5rem */
+.underconstruction:hover {
+    background-color: rgb(229, 69, 69);
 }
 
-.portfolioimage {
-    padding: 1rem;
-    padding-top: 0rem;
-    border-radius: .5rem;
-}
-
-/* blog REFERENCE */
-
-.blog {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    flex-shrink: 0;
-    align-self: stretch;
-    justify-content: space-evenly;
-    border: 2px solid #344E41;
-    background: #222;
-    overflow-x: none;
-    object-fit: contain;
-    border-radius: 0.25rem;
-}
-
-.blogtitle {
-    color: #222;
+.underconstructiontext {
+    color: #f7fff7;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: .75rem;
+    font-size: 1rem;
     font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    text-wrap: pretty
-        /* 4.5rem */
-}
-
-.bloggrid {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    gap: 1rem;
-    flex-direction: row;
-    overflow-x: none;
-    object-fit: contain;
-}
-
-.blogitem {
-    width: 10rem;
-    height: 10rem;
-    display: flex;
-    border-radius: 0.25rem;
-    background-color: #f7fff7;
-    flex-direction: column;
-    align-items: center;
-}
-
-.blogpic {
-    width: 6rem;
-    padding: 1rem;
-    max-height: 6rem;
-    object-fit: fill;
-}
-
-.a {
-    text-decoration-color: #222;
-    text-decoration-line: none;
-}
-
-.breakline {
-    width: 100%;
-    height: 2rem;
-    fill: #EBE8DD;
+    font-weight: 200;
+    line-height: 10%;
+    text-wrap: pretty;
+    margin: 0rem;
 }
 
 .youarehere {
@@ -364,124 +458,5 @@
     font-style: normal;
     font-weight: 400;
     line-height: 100%;
-    text-wrap: pretty
-        /* 4.5rem */
+    text-wrap: pretty;
 }
-
-/* blog */
-
-.blogtext {
-    color: #000;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    text-align: left;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%;
-    text-wrap: pretty
-        /* 3rem */
-}
-
-.blogbody {
-    overflow-x: none;
-    border-radius: 0.5rem;
-    display: flex;
-    width: 100%;
-    padding: 1rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 0rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #f7fff7;
-}
-
-.blogheader {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 50%;
-    justify-content: center;
-}
-
-.blogtypestrong {
-    color: #000;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%;
-    text-wrap: nowrap;
-    /* 3rem */
-
-}
-
-.blogpicblog {
-    height: "auto";
-    width: 50rem;
-    object-fit: contain;
-}
-
-.blogtype {
-    color: #000;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    text-wrap: nowrap;
-}
-
-.blogleft {
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-
-
-.blogwhole {
-    object-fit: contain;
-    display: flex;
-    width: 100%;
-    padding: 2rem;
-    gap: 2rem;
-    flex-direction: column;
-    align-items: center;
-    background-color: #588157;
-    flex-shrink: 0;
-    align-self: stretch;
-    justify-content: space-evenly;
-}
-
-
-
-
-/* from other css */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body.is-preload *,
-body.is-preload *:before,
-body.is-preload *:after {
-    -moz-animation: none !important;
-    -webkit-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-    -moz-transition: none !important;
-    -webkit-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;
-}
-
