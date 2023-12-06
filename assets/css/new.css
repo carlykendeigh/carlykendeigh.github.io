@@ -52,7 +52,7 @@ body.is-preload *:after {
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%;
+    line-height: auto;;
 }
 
 .aboutmetitle {
@@ -63,13 +63,13 @@ body.is-preload *:after {
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%;
+    line-height: auto;;
     /* 4.5rem */
 }
 
 .bodylayout {
     display: flex;
-    width: 100%;
+    width: auto;;
     /* Use 100% to make it scale with the page */
     height: auto;
     /* Auto height to accommodate content */
@@ -99,7 +99,7 @@ body.is-preload *:after {
     overflow-x: none;
     border-radius: 0.5rem;
     display: flex;
-    width: 100%;
+    width: auto;;
     padding: 1rem;
     flex-direction: column;
     align-items: center;
@@ -186,7 +186,7 @@ body.is-preload *:after {
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%;
+    line-height: auto;;
 }
 
 .blogtypestrong {
@@ -196,7 +196,7 @@ body.is-preload *:after {
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%;
+    line-height: auto;;
     /* 3rem */
 
 }
@@ -204,7 +204,7 @@ body.is-preload *:after {
 .blogwhole {
     object-fit: contain;
     display: flex;
-    width: 100%;
+    width: auto;;
     padding: 2rem;
     gap: 2rem;
     flex-direction: column;
@@ -215,7 +215,7 @@ body.is-preload *:after {
 
 .bodylayout {
     display: flex;
-    width: 100%;
+    width: auto;;
     /* Use 100% to make it scale with the page */
     height: auto;
     /* Auto height to accommodate content */
@@ -228,7 +228,7 @@ body.is-preload *:after {
 }
 
 .breakline {
-    width: 100%;
+    width: auto;;
     height: 2rem;
     fill: #EBE8DD;
 }
@@ -289,7 +289,7 @@ body.is-preload *:after {
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%;
+    line-height: auto;;
     /* 4.5rem */
 }
 
@@ -300,7 +300,7 @@ body.is-preload *:after {
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%;
+    line-height: auto;;
 }
 
 .h3 {
@@ -403,7 +403,7 @@ body.is-preload *:after {
 
 .portfolio {
     display: flex;
-    width: 100%;
+    width: auto;;
     padding: 2rem 9.25rem 4.1875rem 6.5625rem;
     flex-direction: column;
     justify-content: center;

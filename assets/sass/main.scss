@@ -268,7 +268,7 @@
 		}
 
 		@include breakpoint('<=medium') {
-			width: 100%;
+			width: auto;;
 
 			&.medium {
 				width: (100% * 0.75);
@@ -276,11 +276,11 @@
 		}
 
 		@include breakpoint('<=small') {
-			width: 100%;
+			width: auto;;
 			max-width: calc(100% - 30px);
 
 			&.medium {
-				width: 100%;
+				width: auto;;
 			}
 		}
 	}
@@ -333,7 +333,7 @@
 			background: #fff;
 			color: #bbb;
 			box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
-			width: 100%;
+			width: auto;;
 
 			&:focus {
 				background: #fafafa;
@@ -375,10 +375,10 @@
 /* Tables */
 
 	table {
-		width: 100%;
+		width: auto;;
 
 		&.default {
-			width: 100%;
+			width: auto;;
 
 			tr {
 				border-top: solid 1px #eee;
@@ -427,17 +427,17 @@
 
 		img {
 			display: block;
-			width: 100%;
+			width: auto;;
 		}
 
 		&.fit {
 			display: block;
-			width: 100%;
+			width: auto;;
 		}
 
 		&.featured {
 			display: block;
-			width: 100%;
+			width: auto;;
 			margin: 0 0 2em 0;
 		}
 
@@ -794,7 +794,7 @@
 		position: fixed;
 		left: 0;
 		top: 0;
-		width: 100%;
+		width: auto;;
 		z-index: 10000;
 		cursor: default;
 		height: 3.5em;
@@ -1048,7 +1048,7 @@
 			.button {
 				text-align: center;
 				font-size: 1.2em;
-				width: 100%;
+				width: auto;;
 				padding: 1em 0 1em 0;
 
 				&.large {
