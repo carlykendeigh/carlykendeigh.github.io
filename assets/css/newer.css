@@ -149,7 +149,7 @@ body.is-preload *:after {
 }
 
 .blogpicblog {
-    height: 20rem;
+    height: 15rem;
     width: auto;
     object-fit: contain;
 }
