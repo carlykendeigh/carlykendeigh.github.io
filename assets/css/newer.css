@@ -136,6 +136,10 @@ body.is-preload *:after {
     align-items: center;
 }
 
+.blogitem:hover {
+    background-color: #cffbcf;
+}
+
 .blogleft {
     flex-direction: column;
     align-items: flex-end;
