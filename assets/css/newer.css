@@ -421,6 +421,12 @@ body.is-preload *:after {
     line-height: 80%;
 }
 
+.uiunpic{
+    height: 60rem;
+    width: auto;
+    object-fit: contain;
+}
+
 .underconstruction {
     display: flex;
     flex-direction: column;
