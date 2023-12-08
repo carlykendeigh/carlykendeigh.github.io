@@ -320,13 +320,18 @@ section {
 }
 
 .navid {
-    color: #222;
+    color: #588157;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.875rem;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
     text-decoration: none;
+}
+
+.navid:hover{
+    color: #344E41;
+
 }
 
 .nav {
