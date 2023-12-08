@@ -350,6 +350,7 @@ body.is-preload *:after {
 .nav {
     display: flex;
     padding-bottom: 1rem;
+    padding-top: 1rem;
     /* Use percentages for padding */
     justify-content: space-evenly;
     align-items: center;
