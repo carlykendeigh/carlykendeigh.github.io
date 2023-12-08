@@ -141,6 +141,14 @@ section {
     width: 50rem;
 }
 
+.blogsplit {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: auto;
+    justify-content:center;
+}
+
 .blogtext {
     color: #000;
     font-family: 'Open Sans', sans-serif;
