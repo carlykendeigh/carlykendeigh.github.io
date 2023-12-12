@@ -180,7 +180,7 @@ body.is-preload *:after {
     line-height: 1.5vw;
     text-wrap: pretty;
     max-width: 95%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .blogtitle {
@@ -250,18 +250,24 @@ body.is-preload *:after {
     display: flex;
     color: var(--White, #FFF);
     font-family: 'Open Sans', sans-serif;
-    font-size: 1vw;
+    font-size: 1.5vw;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1vw;
-    padding: 0.75vw 1.5vw;
+    text-decoration: none;
+    padding: 1.5vw 1.5vw;
     justify-content: center;
     align-items: center;
     gap: 0.625vw;
     background: var(--Dark, #3b3b3b);
     border-radius: 0.5vw;
-    color: var(--White, #FFF);
     box-shadow: #2222225b;
+
+}
+
+.button:hover {
+    background: #504f4f;
+    box-shadow: inset;
 }
 
 .carlypic {
