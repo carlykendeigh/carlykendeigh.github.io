@@ -74,8 +74,6 @@ body.is-preload *:after {
 .bodylayout {
     display: flex;
     width: auto;
-    ;
-    /* Use 100% to make it scale with the page */
     height: auto;
     /* Auto height to accommodate content */
     flex-direction: column;
@@ -105,13 +103,13 @@ body.is-preload *:after {
     border-radius: 0.5vw;
     display: flex;
     width: auto;
-    ;
     padding: 1vw;
     flex-direction: column;
     align-items: center;
     gap: 0vw;
     flex-wrap: wrap;
     background-color: #f7fff7;
+    text-wrap: pretty;
 }
 
 .bloggrid {
@@ -176,7 +174,7 @@ body.is-preload *:after {
     text-align: left;
     font-style: normal;
     font-weight: 400;
-    line-height: 125%;
+    line-height: 1vw;
     /* 3vw */
 }
 
@@ -187,7 +185,7 @@ body.is-preload *:after {
     font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 1.5vw;
     justify-self: baseline;
     /* 4.5vw */
 }
@@ -231,8 +229,6 @@ body.is-preload *:after {
 .bodylayout {
     display: flex;
     width: auto;
-    ;
-    /* Use 100% to make it scale with the page */
     height: auto;
     /* Auto height to accommodate content */
     flex-direction: column;
@@ -268,25 +264,6 @@ body.is-preload *:after {
     box-shadow: #2222225b;
 }
 
-/* .buymecoffee {
-    display: flex;
-    color: var(--White, #FFF);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1vw;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    padding: 0.75vw 1.5vw;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625vw;
-    background: var(--Dark, #3b3b3b);
-    border-radius: 0.5vw;
-    color: var(--White, #FFF);
-    box-shadow: #2222225b;
-    text-decoration-line: none;
-} */
-
 .carlypic {
     width: 10vw;
     height: auto;
@@ -299,6 +276,13 @@ body.is-preload *:after {
     width: 8vw;
     height: auto;
     margin-top: -1vw;
+}
+
+
+.dnimg {
+    height: 15vw;
+    object-fit: cover;
+    width: auto;
 }
 
 .h1 {
@@ -335,7 +319,7 @@ body.is-preload *:after {
     font-style: normal;
     font-size: 1.25vw;
     font-weight: 600;
-    line-height: 80%;
+    line-height: .8vw;
     /* 4.5vw */
 }
 
@@ -374,10 +358,10 @@ body.is-preload *:after {
     align-self: stretch;
     overflow-x: none;
     position: sticky;
-    top: 0%;
+    top: 0vw;
     background: #f7fff7;
     border-bottom-color: #58815789;
-    border-bottom-width: 0.1%;
+    border-bottom-width: 0.01vw;
     border-bottom-style: solid;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
@@ -409,7 +393,7 @@ body.is-preload *:after {
     font-size: 1.125vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 130%;
+    line-height: 1.3vw;
     /* 1.4625vw */
 }
 
@@ -420,7 +404,7 @@ body.is-preload *:after {
     font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 1.5vw;
     /* 1.875vw */
     align-self: stretch;
 }
@@ -532,6 +516,6 @@ body.is-preload *:after {
     font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%;
+    line-height: 1.5vw;
     justify-self: baseline;
 }
