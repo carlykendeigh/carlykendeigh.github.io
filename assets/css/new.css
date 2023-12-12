@@ -514,3 +514,24 @@ body.is-preload *:after {
     margin: 0vw
         /* 4.5vw */
 }
+
+.youarehere {
+    width: 18.75vw;
+    height: 18.75vw;
+    display: flex;
+    border-radius: 0.25vw;
+    background-color: #588157;
+    flex-direction: column;
+    align-items: center;
+}
+
+.youareheretitle {
+    color: #f7fff7;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.25vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    justify-self: baseline;
+}
