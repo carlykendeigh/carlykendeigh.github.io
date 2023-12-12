@@ -13,58 +13,9 @@ section {
     display: block;
 }
 
-.a {
-    text-decoration-color: #222;
-    text-decoration-line: none;
-}
-
-.aboutme {
-    display: flex;
-    flex-direction: column;
-    height: 15rem;
-    margin: 0rem;
-    padding: 3rem;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    align-self: stretch;
-    background: #3b3b3b;
-}
-
-.aboutmetext {
-    color: #FFF;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: auto;
-    ;
-}
-
-.aboutmetitle {
-    color: #FFF;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: auto;
-    ;
-}
-
-.bodylayout {
-    display: flex;
-    width: auto;
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-    background: #f7fff7;
-    overflow-x: none;
-    overflow-y: scroll;
-    scroll-behavior: smooth !important;
+body.is-preload *,
+body.is-preload *:before,
+body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
     -ms-animation: none !important;
@@ -75,31 +26,91 @@ section {
     transition: none !important;
 }
 
-.blog {
+.a {
+    text-decoration-color: #222;
+    text-decoration-line: none;
+}
+
+.aboutme {
     display: flex;
     flex-direction: column;
+    height: 15vw;
+    padding: 2vw 3vw 4vw 3vw;
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
     flex-shrink: 0;
     align-self: stretch;
-    justify-content: space-evenly;
+    background: #3b3b3b;
+    gap: 1vw;
+}
+
+.aboutmetext {
+    color: #FFF;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: auto;
+    text-wrap: pretty;
+    width: auto;
+}
+
+.aboutmetitle {
+    color: #FFF;
+    text-align: center;
+    /* text-5xl/font-bold */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: auto;
+    ;
+    /* 4.5vw */
+}
+
+.bodylayout {
+    display: flex;
+    width: auto;
+    ;
+    /* Use 100% to make it scale with the page */
+    height: auto;
+    /* Auto height to accommodate content */
+    flex-direction: column;
+    align-items: center;
+    background: #f7fff7;
+    overflow-x: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth !important;
+}
+
+.blog {
+    display: flex;
+    height: auto;
+    padding: 0.8125vw 9.25vw 4.1875vw 6.5625vw;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    flex-shrink: 0;
+    align-self: stretch;
     border: 2px solid #344E41;
     background: #222;
     overflow-x: none;
-    object-fit: contain;
-    border-radius: 0.25rem;
 }
 
 .blogbody {
     overflow-x: none;
-    border-radius: 0.5rem;
+    border-radius: 0.5vw;
     display: flex;
     width: auto;
-    padding: 1rem;
+    ;
+    padding: 1vw;
     flex-direction: column;
     align-items: center;
-    gap: auto;
-    justify-content: center;
+    gap: 0vw;
+    flex-wrap: wrap;
     background-color: #f7fff7;
 }
 
@@ -107,26 +118,24 @@ section {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 1vw;
     flex-direction: row;
     overflow-x: none;
-    object-fit: contain;
 }
 
 .blogheader {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    justify-content: space-evenly;
+    gap: 1vw;
+    justify-content: center;
 }
 
 .blogitem {
-    width: 10rem;
-    height: 10rem;
+    width: 18.75vw;
+    height: 18.75vw;
     display: flex;
-    border-radius: 0.25rem;
+    border-radius: 0.25vw;
     background-color: #f7fff7;
     flex-direction: column;
     align-items: center;
@@ -142,14 +151,20 @@ section {
 }
 
 .blogpic {
-    width: 6rem;
-    padding: 1rem;
-    max-height: 6rem;
-    object-fit: fill;
+    width: 17.75vw;
+    padding: 1vw;
+    max-height: 10.75vw;
+    object-fit: contain;
 }
 
 .blogpicblog {
-    height: 15rem;
+    height: 8vw;
+    width: 15vw;
+    object-fit: cover;
+}
+
+.blogpicblogmini {
+    height: 20vw;
     width: auto;
     object-fit: contain;
 }
@@ -157,127 +172,152 @@ section {
 .blogtext {
     color: #000;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1vw;
     text-align: left;
     font-style: normal;
     font-weight: 400;
     line-height: 125%;
-    text-wrap: pretty;
+    /* 3vw */
 }
 
 .blogtitle {
     color: #222;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: .75rem;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
-    line-height: auto;
-    ;
-    text-wrap: pretty;
+    line-height: 150%;
+    justify-self: baseline;
+    /* 4.5vw */
 }
 
 .blogtype {
     color: #000;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     font-style: normal;
     font-weight: 400;
     line-height: auto;
     ;
-    text-wrap: nowrap;
 }
 
 .blogtypestrong {
     color: #000;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     font-style: normal;
     font-weight: 700;
     line-height: auto;
     ;
-    text-wrap: nowrap;
+    /* 3vw */
+
 }
 
 .blogwhole {
-    display: block;
+    object-fit: contain;
     display: flex;
     width: auto;
-    padding: 2rem;
-    gap: 2rem;
+    ;
+    padding: 2vw;
+    gap: 2vw;
     flex-direction: column;
     align-items: center;
+    gap: 3vw;
     background-color: #588157;
-    align-self: auto;
-    justify-content: center;
+}
+
+.bodylayout {
+    display: flex;
+    width: auto;
+    ;
+    /* Use 100% to make it scale with the page */
+    height: auto;
+    /* Auto height to accommodate content */
+    flex-direction: column;
+    align-items: center;
+    background: #f7fff7;
+    overflow-x: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth !important;
 }
 
 .breakline {
     width: auto;
-    height: 2rem;
+    ;
+    height: 2vw;
     fill: #EBE8DD;
-}
-
-.buymecoffee {
-    display: flex;
-    color: var(--White, #FFF);
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    padding: 0.75rem 1.5rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    background: var(--Dark, #3b3b3b);
-    border-radius: 0.5rem;
-    color: var(--White, #FFF);
-    box-shadow: #2222225b;
-    text-decoration-line: none;
 }
 
 .button {
     display: flex;
     color: var(--White, #FFF);
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%;
-    padding: 0.75rem 1.5rem;
+    line-height: 1vw;
+    padding: 0.75vw 1.5vw;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
+    gap: 0.625vw;
     background: var(--Dark, #3b3b3b);
-    border-radius: 0.5rem;
+    border-radius: 0.5vw;
     color: var(--White, #FFF);
     box-shadow: #2222225b;
 }
 
+/* .buymecoffee {
+    display: flex;
+    color: var(--White, #FFF);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 0.75vw 1.5vw;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625vw;
+    background: var(--Dark, #3b3b3b);
+    border-radius: 0.5vw;
+    color: var(--White, #FFF);
+    box-shadow: #2222225b;
+    text-decoration-line: none;
+} */
+
 .carlypic {
-    width: 10rem;
+    width: 10vw;
     height: auto;
     position: absolute;
-    right: -0.0165rem;
-    bottom: -0.27638rem;
+    right: -0.0165vw;
+    bottom: -0.27638vw;
+}
+
+.circle {
+    width: 8vw;
+    height: auto;
+    margin-top: -1vw;
 }
 
 .h1 {
     color: #588157;
+    /* text-5xl/font-bold */
     font-family: 'Open Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 3vw;
     font-style: normal;
     font-weight: 700;
     line-height: auto;
     ;
+    /* 4.5vw */
 }
 
 .h1Accent {
     color: #222;
+    /* text-5xl/font-bold */
     font-family: 'Open Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 3vw;
     font-style: normal;
     font-weight: 700;
     line-height: auto;
@@ -290,62 +330,54 @@ section {
     justify-content: center;
     align-content: center;
     align-self: stretch;
+    /* text-5xl/font-bold */
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 1.25vw;
     font-weight: 600;
     line-height: 80%;
+    /* 4.5vw */
 }
 
 .initialframes {
-    width: 15rem;
-    height: auto;
+    width: auto;
+    height: 28vw;
+    object-fit: contain;
 }
 
 .intro {
     display: flex;
-    padding: 0rem 7.75rem;
+    padding-left: 11%;
+    padding-right: 11%;
     align-items: center;
-    gap: 10.625rem;
+    justify-content: space-between;
+    gap: auto;
     align-self: stretch;
 }
 
 .introcontent {
     display: flex;
-    width: 48.8125rem;
-    padding: 4rem 0rem 5rem 0rem;
+    width: auto;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 3rem;
-}
-
-.navid {
-    color: #588157;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.875rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-    text-decoration: none;
-}
-
-.navid:hover{
-    color: #344E41;
-
+    align-items: center;
+    justify-content: center;
+    /* gap: 2vw; */
 }
 
 .nav {
     display: flex;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5vw;
+    padding-top: 1.5vw;
+    /* Use percentages for padding */
     justify-content: space-evenly;
     align-items: center;
     align-self: stretch;
     overflow-x: none;
     position: sticky;
-    top: 0rem;
+    top: 0%;
     background: #f7fff7;
     border-bottom-color: #58815789;
-    border-bottom-width: 0.1rem;
+    border-bottom-width: 0.1%;
     border-bottom-style: solid;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
@@ -354,57 +386,77 @@ section {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 3.1875rem;
+    gap: 4vw;
+}
+
+.navid {
+    color: #222;
+    /* text-3xl/font-semibold */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1vw;
+    /* 2.8125vw */
+    color: #588157;
+    /* text-3xl/font-semibold */
+    text-decoration: none;
 }
 
 .navitem {
     color: var(--Dark, #1F1F1F);
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.125rem;
+    font-size: 1.125vw;
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
+    /* 1.4625vw */
 }
 
 .p {
     color: var(--Dark, #1F1F1F);
     font-family: 'Open Sans', sans-serif;
     flex-wrap: wrap;
-    font-size: 1.25rem;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    /* 1.875vw */
     align-self: stretch;
 }
 
 .portfolio {
     display: flex;
     width: auto;
-    padding: 2rem 9.25rem 4.1875rem 6.5625rem;
+    padding: 2vw 9.25vw 4.1875vw 6.5625vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    align-self: center;
+    gap: 2vw;
     background: #f7fff7;
     height: fit-content;
 }
 
 .portfolioimage {
-    padding: 1rem;
-    padding-top: 0rem;
-    border-radius: .5rem;
+    padding: 0vw;
+    padding-top: 0vw;
+    border-radius: .5vw;
+    width: 12vw;
+    height: auto;
 }
 
 .portfolioitem {
+    align-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.0625rem;
+    gap: 0.0625vw;
     border: 0.5px solid #344e4151;
-    width: 15rem;
-    background: #3b3b3b;
+    width: 15vw;
+    background: #222;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 0.4rem;
+    border-radius: 0.4vw;
 }
 
 .portfolioitem:hover {
@@ -414,8 +466,8 @@ section {
 .portfoliorow {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 3rem;
+    align-items: center;
+    gap: 3vw;
     align-self: stretch;
     flex-direction: row;
 }
@@ -424,58 +476,52 @@ section {
     color: #588157;
     text-align: center;
     align-self: stretch;
+    /* text-5xl/font-bold */
     font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 80%;
-}
-
-.uiunpic {
-    height: 60rem;
-    width: auto;
-    object-fit: contain;
+    line-height: .8vw;
+    /* 72px */
 }
 
 .underconstruction {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.0625rem;
+    gap: 0.0625vw;
     border: 0.5px solid #344e4151;
-    width: 15rem;
+    width: 15vw;
     background: #222;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     box-shadow: inset;
-    border-radius: 0.4rem;
+    border-radius: 0.4vw;
 }
 
 .underconstruction:hover {
-    background-color: rgb(229, 69, 69);
+    background-color: rgb(229, 69, 69)
 }
 
 .underconstructiontext {
     color: #f7fff7;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 200;
-    line-height: 10%;
-    text-wrap: pretty;
-    margin: 0rem;
+    line-height: 1vw;
+    text-wrap: "pretty";
+    margin: 0vw
+        /* 4.5vw */
 }
 
 .youarehere {
-    width: 10rem;
-    height: 10rem;
+    width: 18.75vw;
+    height: 18.75vw;
     display: flex;
-    border-radius: 0.25rem;
+    border-radius: 0.25vw;
     background-color: #588157;
-    box-shadow: inset;
-    box-shadow: #222;
     flex-direction: column;
-    color: #f7fff7;
     align-items: center;
 }
 
@@ -483,10 +529,9 @@ section {
     color: #f7fff7;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: .75rem;
+    font-size: 1.25vw;
     font-style: normal;
     font-weight: 400;
-    line-height: auto;
-    ;
-    text-wrap: pretty;
+    line-height: 150%;
+    justify-self: baseline;
 }
