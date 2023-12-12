@@ -35,12 +35,13 @@ body.is-preload *:after {
     display: flex;
     flex-direction: column;
     height: 15vw;
-    padding: 1vw 9vw 4vw 6vw;
+    padding: 2vw 3vw 4vw 3vw;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
     align-self: stretch;
     background: #3b3b3b;
+    gap: 1vw;
 }
 
 .aboutmetext {
@@ -49,11 +50,12 @@ body.is-preload *:after {
     align-content: center;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.25vw;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 400;
     line-height: auto;
-    ;
+    text-wrap: pretty;
+    width: auto;
 }
 
 .aboutmetitle {
@@ -125,7 +127,7 @@ body.is-preload *:after {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 50%;
+    gap: 1vw;
     justify-content: center;
 }
 
@@ -251,13 +253,11 @@ body.is-preload *:after {
 .button {
     display: flex;
     color: var(--White, #FFF);
-    /* text-base/font-bold */
     font-family: 'Open Sans', sans-serif;
     font-size: 1vw;
     font-style: normal;
     font-weight: 700;
-    line-height: 150%;
-    /* 1.5vw */
+    line-height: 1vw;
     padding: 0.75vw 1.5vw;
     justify-content: center;
     align-items: center;
@@ -268,16 +268,14 @@ body.is-preload *:after {
     box-shadow: #2222225b;
 }
 
-.buymecoffee {
+/* .buymecoffee {
     display: flex;
     color: var(--White, #FFF);
-    /* text-base/font-bold */
     font-family: 'Open Sans', sans-serif;
     font-size: 1vw;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
-    /* 1.5vw */
     padding: 0.75vw 1.5vw;
     justify-content: center;
     align-items: center;
@@ -287,7 +285,7 @@ body.is-preload *:after {
     color: var(--White, #FFF);
     box-shadow: #2222225b;
     text-decoration-line: none;
-}
+} */
 
 .carlypic {
     width: 10vw;
@@ -295,6 +293,12 @@ body.is-preload *:after {
     position: absolute;
     right: -0.0165vw;
     bottom: -0.27638vw;
+}
+
+.circle {
+    width:8vw;
+    height: auto;
+    margin-top: -1vw;
 }
 
 .h1 {
@@ -343,19 +347,21 @@ body.is-preload *:after {
 
 .intro {
     display: flex;
-    padding: 0vw 7.75vw;
+    padding-left: 11%;
+    padding-right: 11%;
     align-items: center;
-    gap: 10.625vw;
+    justify-content: space-between;
+    gap: auto;
     align-self: stretch;
 }
 
 .introcontent {
     display: flex;
-    width: 48.8125vw;
-    padding: 4vw 0vw 5vw 0vw;
+    width: auto;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 3vw;
+    align-items: center;
+    justify-content: center;
+    /* gap: 2vw; */
 }
 
 .nav {
@@ -421,7 +427,7 @@ body.is-preload *:after {
 
 .portfolio {
     display: flex;
-    width: auto;  
+    width: auto;
     padding: 2vw 9.25vw 4.1875vw 6.5625vw;
     flex-direction: column;
     justify-content: center;
