@@ -110,6 +110,8 @@ body.is-preload *:after {
     flex-wrap: wrap;
     background-color: #f7fff7;
     text-wrap: pretty;
+    max-width: 100%;
+
 }
 
 .bloggrid {
@@ -170,12 +172,15 @@ body.is-preload *:after {
 .blogtext {
     color: #000;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1vw;
+    font-size: 1.5vw;
     text-align: left;
+    align-self: center;
     font-style: normal;
     font-weight: 400;
-    line-height: 1vw;
-    /* 3vw */
+    line-height: 1.5vw;
+    text-wrap: pretty;
+    max-width: 95%;
+    box-sizing: border-box; 
 }
 
 .blogtitle {
@@ -193,31 +198,26 @@ body.is-preload *:after {
 .blogtype {
     color: #000;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2vw;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 400;
     line-height: auto;
-    ;
 }
 
 .blogtypestrong {
     color: #000;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-style: normal;
     font-weight: 700;
     line-height: auto;
-    ;
-    /* 3vw */
-
 }
 
 .blogwhole {
     object-fit: contain;
     display: flex;
     width: auto;
-    ;
     padding: 2vw;
     gap: 2vw;
     flex-direction: column;
@@ -281,8 +281,8 @@ body.is-preload *:after {
 
 .dnimg {
     height: 15vw;
-    object-fit: cover;
     width: auto;
+    object-fit: contain;
 }
 
 .h1 {
@@ -327,6 +327,12 @@ body.is-preload *:after {
     width: auto;
     height: 28vw;
     object-fit: contain;
+}
+
+.images {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .intro {
